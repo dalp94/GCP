@@ -1,0 +1,7 @@
+TERMINAL
+python3 -m wordcount --input gs://dataflow_databits/el_quijote.txt \
+                    --output gs://dataflow_databits/terminal/el_quijote_counts \
+                    --runner DataflowRunner \
+                    --project keen-enigma-342516 \
+                    --region us-central1 \
+                    --temp_location gs://dataflow_databits/tmp/
